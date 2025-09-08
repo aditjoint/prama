@@ -2,76 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <title>ADAM Consult - Film and Media Industries Consulting</title>
-  <meta name="description" content="We provide integrated solutions across Film, Media, and Entertainment — Scriptwriting, Consultancy, Translation, and Studio Services." />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <title>ADAM Consult - Film and Media Industry Consulting</title>
+  <meta name="description" content="Providing comprehensive solutions for Film, Media, and Entertainment industries including Scriptwriting, Consulting, Translation, and Studio Services." />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/protect.css" />
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  <!-- ✅ Header Placeholder -->
+  <!-- Header -->
   <div id="header-placeholder"></div>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
-
         <div class="hero-text">
-          <span class="hero-subtitle">Focused Expertise. Media and Entertainment Solutions.</span>
-          <h1 class="hero-title">ADAM Films and Media </h1>
-          <h2 class="hero-subtitle-large">Your Trusted Partner in Media and Entertainment Solutions</h2>
-
+          <span class="hero-subtitle">Specialized Expertise | Media & Entertainment Solutions</span>
+          <h1 class="hero-title">ADAM Films & Media</h1>
+          <h2 class="hero-subtitle-large">Your Trusted Partner for Innovative Media & Entertainment Services</h2>
           <div class="hero-image">
-            <img src="images/greetings.jpg"
-              alt="Greetings! ADAM Consult is Empowering Film and Entertainment Industries with Innovative Digital Transformation." />
+            <img src="images/greetings.jpg" alt="Empowering Film and Entertainment Industries through Digital Innovation at ADAM Consult." />
           </div>
-
-          <p class="hero-description">Film, Media, and Entertainment Services</p>
-          <p>🤝 Partner with us to power your progress.</p>
-
+          <p class="hero-description">Comprehensive Film, Media, and Entertainment Services</p>
+          <p>🤝 Partner with us to accelerate your creative journey and business growth.</p>
           <div class="hero-buttons">
             <a href="about.html" class="btn btn-primary">Get Started</a>
             <a href="contact.html" class="btn btn-secondary">Contact Us</a>
           </div>
-
           <div class="certification-badges">
-            <span class="badge">A Trusted Partner</span>
+            <span class="badge">A Reliable & Trusted Partner</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ✅ Film Services -->
+  <!-- Film & Entertainment Services -->
   <section class="film-services">
-    <h1>Film & Entertainment Scriptwriting / Consultancy Services</h1>
-
+    <h1>Comprehensive Scriptwriting & Consulting Services for Film & Entertainment</h1>
     <div class="service-grid">
       <div class="card">
-        <h2>1. Feature Film / Web Series Script Writing</h2>
-        <p>Screenplay development in Hindi, English, and Urdu for feature films, OTT web series, and independent projects.</p>
+        <h2>1. Feature Film & Web Series Scriptwriting</h2>
+        <p>Expert screenplay development in Hindi, English, and Urdu for feature films, OTT series, and independent projects with a focus on compelling narratives.</p>
       </div>
-
       <div class="card">
         <h2>2. Script Analysis & Editing (Script Doctor)</h2>
-        <p>Expert review and enhancement of your screenplay, ensuring production-ready output.</p>
+        <p>Detailed screenplay review and professional editing to polish your script for a seamless production-ready experience.</p>
       </div>
-
       <div class="card">
         <h2>3. Hindi-Urdu Songs & Ghazals Writing</h2>
-        <p>Professional lyric writing tailored for films, series, and music projects.</p>
+        <p>Crafting soulful and impactful lyrics tailored for films, series, and music productions by skilled lyricists.</p>
       </div>
     </div>
   </section>
@@ -80,65 +66,53 @@
   <section class="cta-section">
     <div class="container">
       <div class="cta-content">
-        <h2>Ready to Transform Your Films and Media?</h2>
-        <p>Contact us today to discuss the next big thing in media industries.</p>
+        <h2>Ready to Elevate Your Film and Media Projects?</h2>
+        <p>Connect with us today to bring your creative vision to life and create lasting impact.</p>
         <a href="contact.html" class="btn btn-primary">Get In Touch</a>
       </div>
     </div>
   </section>
 
-  <!-- ✅ Footer Placeholder -->
-  <div id="footer-placeholder"></div>    
- <!-- ✅ Load header and footer dynamically and then initialize scripts -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Load Header
-    fetch("/header.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("header-placeholder").innerHTML = html;
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
 
-        // ✅ Wait for DOM injection, then bind mobile menu
-        const toggle = document.getElementById("menu-toggle");
-        const nav = document.getElementById("mobile-menu");
-
-        if (toggle && nav) {
-          toggle.addEventListener("click", function () {
-            nav.classList.toggle("active");
-          });
-        }
-
-        // ✅ Optional: re-run dropdown initialization if needed
-        if (typeof initDropdowns === "function") initDropdowns();
-      });
-
-    // Load Footer
-    fetch("/footer.html")
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById("footer-placeholder").innerHTML = html;
-
-        // ✅ Load protection script after footer
-        const protect = document.createElement("script");
-        protect.src = "/js/imgTextProtect.js";
-        document.body.appendChild(protect);
-      });
-
-    // ✅ Load core scripts after all above
-    const main = document.createElement("script");
-    main.src = "/js/main.js";
-    main.onload = () => {
-      if (typeof initTabs === "function") initTabs();
-      if (typeof initHeroAnimation === "function") initHeroAnimation();
-      // Add other initializers if needed
-    };
-    document.body.appendChild(main);
-
-    const dropdown = document.createElement("script");
-    dropdown.src = "/js/dropdown.js";
-    document.body.appendChild(dropdown);
-  });
-</script>
-
+  <!-- Dynamic Header/Footer Loading and Script Initialization -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("/header.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("header-placeholder").innerHTML = html;
+          
+          const toggle = document.getElementById("menu-toggle");
+          const nav = document.getElementById("mobile-menu");
+          if (toggle && nav) {
+            toggle.addEventListener("click", () => nav.classList.toggle("active"));
+          }
+          if (typeof initDropdowns === "function") initDropdowns();
+        });
+      fetch("/footer.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("footer-placeholder").innerHTML = html;
+          
+          const protect = document.createElement("script");
+          protect.src = "/js/imgTextProtect.js";
+          document.body.appendChild(protect);
+        });
+      
+      const main = document.createElement("script");
+      main.src = "/js/main.js";
+      main.onload = () => {
+        if (typeof initTabs === "function") initTabs();
+        if (typeof initHeroAnimation === "function") initHeroAnimation();
+      };
+      document.body.appendChild(main);
+      
+      const dropdown = document.createElement("script");
+      dropdown.src = "/js/dropdown.js";
+      document.body.appendChild(dropdown);
+    });
+  </script>
 </body>
 </html>
