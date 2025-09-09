@@ -5,69 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
   <title>ADAM Consult Film and Media Industry Consulting</title>
   <meta name="description" content="Providing comprehensive solutions for Film, Media, and Entertainment industries including Scriptwriting, Consulting, Translation, and Studio Services." />
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/protect.css" />
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
 <!-- 🔒 Inline Protection Fallback -->
-  <style>
-    html, body {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    input, textarea, select, label, a, button {
-      -webkit-user-select: text;
-      -moz-user-select: text;
-      -ms-user-select: text;
-      user-select: text;
-    }
-  </style>
+<style>
+  html, body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  input, textarea, select, label, a, button {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+</style>
 
-  
-  <!-- Header -->
-  <div id="header-placeholder"></div>
+<!-- Header -->
+<div id="header-placeholder"></div>
 
-  
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <span class="hero-subtitle">Specialized Expertise | Scripting Media & Entertainment Solutions</span>
-          <h1 class="hero-title">ADAM Consult</h1>
-          <h2 class="hero-subtitle-large">Your Trusted Partner for Innovative Media & Entertainment Services</h2>
-               <!-- Hero Image in index.html -->
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-subtitle">Specialized Expertise | Scripting Media & Entertainment Solutions</span>
+        <h1 class="hero-title">ADAM Consult</h1>
+        <h2 class="hero-subtitle-large">Your Trusted Partner for Innovative Media & Entertainment Services</h2>
+        
+        <!-- Hero Image -->
         <div class="hero-image">
-        <img src="../images/greetings.jpg" 
-         alt="Greetings !!! ADAM Consult's Innovative Media & Entertainment Services" />
+          <img src="images/greetings.jpg" 
+               alt="Greetings from ADAM Consult's Innovative Media & Entertainment Services" />
         </div>
-          
-          <p class="hero-description">Comprehensive Film, Media, and Entertainment Services</p>
-          <p>🤝 Partner with us to accelerate your creative journey and business growth.</p>
-          <div class="hero-buttons">
-            <a href="about.html" class="btn btn-primary">Get Started</a>
-            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
-          </div>
-          <div class="certification-badges">
-            <span class="badge">A Reliable & Trusted Partner</span>
-          </div>
+        
+        <p class="hero-description">Comprehensive Film, Media, and Entertainment Services</p>
+        <p>🤝 Partner with us to accelerate your creative journey and business growth.</p>
+        
+        <div class="hero-buttons">
+          <a href="about.html" class="btn btn-primary">Get Started</a>
+          <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+        
+        <div class="certification-badges">
+          <span class="badge">A Reliable & Trusted Partner</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  
-  <div>
 <!-- ✅ Film & Entertainment Services Section -->
 <section class="film-services">
   <div class="container">
@@ -166,126 +167,122 @@
   </div>
 </section>
 
-    
+<!-- Section Styles -->
 <style>
-.film-services {
-  padding: 60px 20px;
-  background: #f8f9fa;
-  font-family: 'Roboto', sans-serif;
-}
+  .film-services {
+    padding: 60px 20px;
+    background: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+  }
+  .film-services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .film-services h2 {
+    font-size: 2rem;
+    color: #212529;
+    margin-bottom: 2.5rem;
+  }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+  .card {
+    background: #fff;
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  .card h3 {
+    font-size: 1.25rem;
+    color: #0d6efd;
+    margin-bottom: 0.8rem;
+  }
+  .card p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+  }
+  .card ul {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+  .card ul li {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+</style>
 
-.film-services .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.film-services h2 {
-  font-size: 2rem;
-  color: #212529;
-  margin-bottom: 2.5rem;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  justify-content: center;
-}
-
-.card {
-  background: #fff;
-  padding: 1.8rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
-
-.card h3 {
-  font-size: 1.25rem;
-  color: #0d6efd;
-  margin-bottom: 0.8rem;
-}
-
-.card p {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 0.8rem;
-  line-height: 1.6;
-}
-
-.card ul {
-  padding-left: 1.2rem;
-  margin: 0;
-}
-
-.card ul li {
-  margin-bottom: 0.4rem;
-  font-size: 0.9rem;
-  color: #333;
-}
-  </style>
-
-
-    
-  
-  <!-- Call to Action -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-content">
-        <h2>Ready to Elevate Your Film and Media Projects?</h2>
-        <p>Connect with us today to bring your creative vision to life and create lasting impact.</p>
-        <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-      </div>
+<!-- Call to Action -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Elevate Your Film and Media Projects?</h2>
+      <p>Connect with us today to bring your creative vision to life and create lasting impact.</p>
+      <a href="contact.html" class="btn btn-primary">Get In Touch</a>
     </div>
-  </section>
-   
-  <!-- Footer -->
-  <div id="footer-placeholder"></div>
+  </div>
+</section>
 
-  <!-- Dynamic Header/Footer Loading and Script Initialization -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      fetch("/header.html")
-        .then(res => res.text())
-        .then(html => {
-          document.getElementById("header-placeholder").innerHTML = html;
-          
-          const toggle = document.getElementById("menu-toggle");
-          const nav = document.getElementById("mobile-menu");
-          if (toggle && nav) {
-            toggle.addEventListener("click", () => nav.classList.toggle("active"));
-          }
-          if (typeof initDropdowns === "function") initDropdowns();
-        });
-      fetch("/footer.html")
-        .then(res => res.text())
-        .then(html => {
-          document.getElementById("footer-placeholder").innerHTML = html;
-          
-          const protect = document.createElement("script");
-          protect.src = "/js/imgTextProtect.js";
-          document.body.appendChild(protect);
-        });
-      
-      const main = document.createElement("script");
-      main.src = "/js/main.js";
-      main.onload = () => {
-        if (typeof initTabs === "function") initTabs();
-        if (typeof initHeroAnimation === "function") initHeroAnimation();
-      };
-      document.body.appendChild(main);
-      
-      const dropdown = document.createElement("script");
-      dropdown.src = "/js/dropdown.js";
-      document.body.appendChild(dropdown);
-    });
-  </script>
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Dynamic Header/Footer Loading and Script Initialization -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Load header
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => {
+        const headerEl = document.getElementById("header-placeholder");
+        if (headerEl) headerEl.innerHTML = html;
+
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("mobile-menu");
+        if (toggle && nav) {
+          toggle.addEventListener("click", () => nav.classList.toggle("active"));
+        }
+        if (typeof initDropdowns === "function") initDropdowns();
+      });
+
+    // Load footer
+    fetch("/footer.html")
+      .then(res => res.text())
+      .then(html => {
+        const footerEl = document.getElementById("footer-placeholder");
+        if (footerEl) footerEl.innerHTML = html;
+
+        const protect = document.createElement("script");
+        protect.src = "/js/imgTextProtect.js";
+        document.body.appendChild(protect);
+      });
+
+    // Load main script
+    const main = document.createElement("script");
+    main.src = "/js/main.js";
+    main.onload = () => {
+      if (typeof initTabs === "function") initTabs();
+      if (typeof initHeroAnimation === "function") initHeroAnimation();
+    };
+    document.body.appendChild(main);
+
+    // Load dropdown script
+    const dropdown = document.createElement("script");
+    dropdown.src = "/js/dropdown.js";
+    document.body.appendChild(dropdown);
+  });
+</script>
+
 </body>
 </html>
