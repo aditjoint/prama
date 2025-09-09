@@ -592,15 +592,15 @@ body {
 
 .about-image .image-container {
     position: relative;
-    height: 400px;
+    height: 800px;
     border-radius: var(--border-radius-md);
     overflow: hidden;
     background-image: url('../images/bg31.png');
-    background-size: cover;
+    background-size: contain;     /* shows full image */
+    background-repeat: no-repeat; /* prevents tiling */
     background-position: center;
     box-shadow: var(--shadow-lg);
 }
-
 .about-image .overlay-text {
     position: absolute;
     top: 50%;
