@@ -456,7 +456,7 @@ body {
 .hero {
     position: relative;
     background-color: #0a2040;
-    background-image: linear-gradient(rgba(10, 32, 64, 0.85), rgba(10, 32, 64, 0.9)), background-image: url('./images/bg31.png');
+    background-image: linear-gradient(rgba(10, 32, 64, 0.85), rgba(10, 32, 64, 0.9)), background-image: url('./images/bg30.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
