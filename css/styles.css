@@ -1299,7 +1299,7 @@ body {
 
 .form-group select {
     appearance: none;
-    background-image: url("../images/bg30.jpg");
+    background-image: url('../images/bg30.jpg');
     background-repeat: no-repeat;
     background-position: right 10px center;
     padding-right: 40px;
