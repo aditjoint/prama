@@ -67,10 +67,11 @@
   </section>
 
 
-<!-- Film & Entertainment Services -->
+
   <div>
+<!-- Film & Entertainment Services -->
 <section class="film-services">
-  <div style="max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; text-align: center;">
+  <div class="container">
     <h1>Comprehensive Scriptwriting & Consulting Services for Film & Entertainment</h1>
     <div class="service-grid">
       <div class="card">
@@ -89,6 +90,57 @@
   </div>
 </section>
 </div>
+
+<style>
+  .film-services {
+  padding: 60px 20px;
+  background-color: #fafafa;
+}
+
+.film-services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.film-services h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+  </style>
 
   <!-- Call to Action -->
   <section class="cta-section">
