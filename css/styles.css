@@ -456,7 +456,7 @@ body {
 .hero {
     position: relative;
     background-color: #0a2040;
-    background-image: linear-gradient(rgba(10, 32, 64, 0.85), rgba(10, 32, 64, 0.9)), url('../images/bg31.png');
+    background-image: linear-gradient(rgba(10, 32, 64, 0.85), rgba(10, 32, 64, 0.9)), background-image: url('./images/bg31.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -596,7 +596,7 @@ body {
     width: 100%
     border-radius: var(--border-radius-md);
     overflow: hidden;
-    background-image: url('../images/bg31.png');
+    background-image: background-image: url('./images/bg31.png');
     background-size: contain;     /* shows full image */
     background-repeat: no-repeat; /* prevents tiling */
     background-position: center;
@@ -1874,7 +1874,7 @@ body {
   font-family: Arial, sans-serif;
 
   /* Background image setup */
-  background-image: url('../images/bg30.jpg'); /* Change to your image path */
+  background-image: url('../images/bg3.png'); /* Change to your image path */
   background-size: cover; /* Fill the screen */
   background-position: center;
   background-repeat: no-repeat;
