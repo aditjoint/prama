@@ -1919,7 +1919,7 @@ body::before {
 }
 
 .logo-img {
-  height: 40px;    /* adjust height as needed */
+  height:80px;    /* adjust height as needed */
   width: auto;     /* maintain aspect ratio */
   display: inline-block;
   vertical-align: middle;
