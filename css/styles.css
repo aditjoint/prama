@@ -1917,4 +1917,12 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+
+/* ===== Logo ===== */
+.logo img.logo-img {
+  height: 50px;       /* Adjust height as needed */
+  width: auto;
+  display: block;
+}
+
 /* END STYLE*/
