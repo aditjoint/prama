@@ -36,7 +36,7 @@
     "@type": "Organization",
     "name": "ADAM Consult",
     "url": "https://www.adamconsult.com/",
-    "logo": "https://www.adamconsult.com/assets/images/logo.png",
+    "logo": "https://www.adamconsult.com/images/logo.png",
     "sameAs": [
       "https://www.linkedin.com/company/adamconsult",
       "https://twitter.com/adamconsult"
@@ -81,19 +81,41 @@
 <a href="/bot-trap.html" style="display:none;" tabindex="-1" aria-hidden="true">DoNotClick</a>
 
 
-  <!-- ✅ Header Section -->
-  <header class="adam-header">
-    <div class="container">
-      <div class="header-content">
+<!-- ✅ Header Section -->
+<header class="adam-header">
+  <div class="container">
+    <div class="header-content">
 
-        <!-- Logo -->
-        <div class="logo">
-          <a href="../index.html">
-            <div class="logo-icon"><span class="letter">A</span></div>
-            <span class="logo-text">ADAM Consult | PRAMA</span>
-          </a>
-        </div>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="../index.html">
+          <img src="images/logo.png" alt="Adam Consult Logo" class="logo-img" />
+        </a>
+      </div>
 
+<styles>
+      /* Logo image settings */
+.logo-img {
+  height: 40px;    /* scale the logo smaller */
+  width: auto;     /* maintain aspect ratio */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Optional: if you want header background intact */
+.adam-header {
+  background: #fff;  /* or your theme color */
+  padding: 10px 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+        
+</styles>
+        
         <!-- ✅ Mobile Menu Toggle (with ID) -->
         <div class="mobile-menu-toggle" id="menu-toggle">
           <i class="fas fa-bars"></i>
