@@ -238,8 +238,8 @@ body {
 }
 .logo-icon {
     background-color: var(--primary-color);
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60x;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -313,7 +313,7 @@ body {
 
 /* Logo image alignment and sizing for header */
 .logo img {
-    height: 40px;         /* Adjust height to fit header */
+    height: 60px;         /* Adjust height to fit header */
     width: auto;
     display: block;       /* removes inline spacing */
     margin: 0;            /* removes default margin */
