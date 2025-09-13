@@ -304,6 +304,61 @@ body {
     background-color: var(--primary-color);
 }
 
+
+
+
+
+
+
+
+/* Logo image alignment and sizing for header */
+.logo img {
+    height: 40px;         /* Adjust height to fit header */
+    width: auto;
+    display: block;       /* removes inline spacing */
+    margin: 0;            /* removes default margin */
+    padding: 0;           /* removes default padding */
+    vertical-align: middle;
+    background: none;     /* removes any background color */
+    border: none;
+}
+
+/* Logo container */
+.logo {
+    display: flex;
+    align-items: center;
+    background: none;     /* ensure no background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure header content centers vertically */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;         /* optional fixed height */
+    padding: var(--spacing-sm) 0;
+}
+
+/* Also make sure header background is white */
+header {
+    background-color: var(--white);  /* or #fff */
+    box-shadow: var(--shadow-sm);
+}
+
+/* Body padding to avoid overlap */
+body {
+    margin: 0;
+    padding-top: 80px;    /* adjust to header height */
+}
+
+
+
+
+
+
+
 /* Dropdown Menu */
 .dropdown {
     position: relative;
