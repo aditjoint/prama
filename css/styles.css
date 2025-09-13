@@ -330,6 +330,8 @@ body {
     background: none;     /* ensure no background */
     margin: 0;
     padding: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Ensure header content centers vertically */
