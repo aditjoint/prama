@@ -313,7 +313,7 @@ body {
 
 /* Logo image alignment and sizing for header */
 .logo img {
-    height: 60px;         /* Adjust height to fit header */
+    height: 100px;         /* Adjust height to fit header */
     width: auto;
     display: block;       /* removes inline spacing */
     margin: 0;            /* removes default margin */
