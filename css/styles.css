@@ -238,8 +238,8 @@ body {
 }
 .logo-icon {
     background-color: var(--primary-color);
-    width: 60px;
-    height: 60x;
+    width: 80px;
+    height: 80x;
     border-radius: 4px;
     display: flex;
     align-items: center;
