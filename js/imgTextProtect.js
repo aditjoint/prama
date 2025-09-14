@@ -3,6 +3,13 @@
  * Combines your original full protections + extra traps
  */
 
+// ✅ Exempt header/footer logos from protection
+const exemptLogoElements = document.querySelectorAll(".logo a, .footer-logo a");
+exemptLogoElements.forEach(el => {
+    el.style.pointerEvents = "auto"; // ensure clicks work
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
   // 🔒 Block right-click globally
@@ -53,6 +60,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 🔒 Protect images completely: block all mouse/touch interaction
   document.querySelectorAll("img").forEach(img => {
+    // ✅ Skip overlay if image is inside exempt logo link
+    const isExempt = img.closest(".logo a, .footer-logo a");
+    if (isExempt) return;
+
     img.setAttribute("draggable", "false");
 
     const wrapper = document.createElement("div");
@@ -138,9 +149,12 @@ overlay.classList.add("img-overlay");
 
 // attach overlay above image safely
 if (typeof img !== 'undefined' && img && img.parentNode) {
-  img.parentNode.insertBefore(wrapper, img);
-  wrapper.appendChild(img);
-  wrapper.appendChild(overlay);
+  const isExempt = img.closest(".logo a, .footer-logo a");
+  if (!isExempt) {
+    img.parentNode.insertBefore(wrapper, img);
+    wrapper.appendChild(img);
+    wrapper.appendChild(overlay);
+  }
 }
 
 /* ============================================================
@@ -282,6 +296,10 @@ setInterval(function () {
   document.addEventListener(evt, function(e){
     const imgEl = e.target.closest("img, .img-wrapper, .img-overlay, a[href$='.jpg'], a[href$='.png'], a[href$='.jpeg'], a[href$='.gif']");
     if (imgEl) {
+      // ✅ Skip if inside logo link
+      const isExempt = imgEl.closest(".logo a, .footer-logo a");
+      if (isExempt) return;
+
       e.preventDefault();
       e.stopImmediatePropagation();
       return false;
@@ -293,6 +311,10 @@ setInterval(function () {
 document.addEventListener("touchstart", function (e) {
   const imgEl = e.target.closest("img, .img-wrapper, .img-overlay");
   if (!imgEl) return;
+
+  // ✅ Skip if inside logo link
+  const isExempt = imgEl.closest(".logo a, .footer-logo a");
+  if (isExempt) return;
 
   if (e.touches.length >= 2) {
     // ✅ Allow pinch zoom (2+ fingers)
@@ -309,6 +331,10 @@ document.addEventListener("touchstart", function (e) {
   document.addEventListener(evt, function(e){
     const imgEl = e.target.closest("img, .img-wrapper, .img-overlay");
     if (!imgEl) return;
+
+    // ✅ Skip if inside logo link
+    const isExempt = imgEl.closest(".logo a, .footer-logo a");
+    if (isExempt) return;
 
     if (e.touches && e.touches.length >= 2) {
       // ✅ Allow pinch zoom
