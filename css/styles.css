@@ -448,7 +448,7 @@ footer::after {
 .hero {
     position: relative;
     background-color: #0a2040;
-    background-image: linear-gradient(rgba(10, 32, 64, 0.85), rgba(10, 32, 64, 0.9)), url('./images/bg33.jpg');
+    background-image: linear-gradient(rgba(10, 32, 64, 0.85), rgba(10, 32, 64, 0.9)), url('../images/bg33.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1864,7 +1864,7 @@ body {
   font-family: Arial, sans-serif;
 
   /* Background image setup */
-  background-image: url('../images/bg33.jpg'); /* Change to your image path */
+  background-image: url('../images/bg34.jpg'); /* Change to your image path */
   background-size: cover; /* Fill the screen */
   background-position: center;
   background-repeat: no-repeat;
