@@ -205,6 +205,8 @@ header {
     height: 60px;
     padding: var(--spacing-sm) 0;
 }
+
+
 .logo, .footer-logo {
     display: flex;
     align-items: center;
@@ -255,6 +257,8 @@ header {
     background: none;
     border: none;
 }
+
+
 /* Navigation */
 .main-nav {
     display: flex;
