@@ -1,4 +1,3 @@
-
 /* ===== protect.css — Global Content & Image Protection ===== */
 /* ✅ Base layout and scroll control */
 html, body {
@@ -90,4 +89,3 @@ img.protected-img {
   z-index: 9999;
   cursor: default;
 }
-
