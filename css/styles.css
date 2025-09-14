@@ -1,12 +1,15 @@
+
 /* 
 * ADAM Consult - Main Stylesheet
 * Author: ADAM Consult
 * Version: 1.0
 */
+
 /* --------------------------------------------
    Base Styles & Variables
 -------------------------------------------- */
 :root {
+    /* Color Variables */
     --primary-color: #0056b3;
     --primary-dark: #004494;
     --primary-light: #e6f0ff;
@@ -30,6 +33,8 @@
     --gray-700: #495057;
     --gray-800: #343a40;
     --gray-900: #212529;
+    
+    /* Typography */
     --font-primary: 'Roboto', sans-serif;
     --font-size-base: 1rem;
     --font-size-sm: 0.875rem;
@@ -38,6 +43,8 @@
     --font-size-2xl: 2rem;
     --font-size-3xl: 2.5rem;
     --font-size-4xl: 3rem;
+    
+    /* Spacing */
     --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
@@ -46,73 +53,50 @@
     --spacing-2xl: 3rem;
     --spacing-3xl: 4rem;
     --spacing-4xl: 5rem;
+    
+    /* Border Radius */
     --border-radius-sm: 0.25rem;
     --border-radius-md: 0.5rem;
     --border-radius-lg: 1rem;
     --border-radius-full: 50%;
+    
+    /* Shadows */
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
     --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+    
+    /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
+    
+    /* Container */
     --container-max-width: 1200px;
     --container-padding: 1rem;
 }
+
 /* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
 }
+
 body {
-    font-family: var(--font-primary), 'Segoe UI', Arial, sans-serif;
+    font-family: var(--font-primary);
     font-size: var(--font-size-base);
     color: var(--text-dark);
     line-height: 1.6;
     background-color: var(--white);
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    z-index: 0;
-    padding-top: 80px; /* adjust to actual rendered header height */
-    background-image: url('../images/sustainability-bg.jpg'); /* Change to your image path */
-    background-size: cover; /* Fill the screen */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Makes it stay still while scrolling */
 }
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.85); 
-    pointer-events: none;
-    z-index: -1;
-}
-body.watermarked::before {
-    content: "ADAM Consult - ADIT Joint LLP";
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    transform: rotate(60deg) translate(-10%, 50%);
-    font-size: 1.5rem;
-    color: rgba(43, 79, 129, 0.07);
-    white-space: nowrap;
-    z-index: -1;
-    pointer-events: none;
-    user-select: none;
-}
-/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-primary);
     font-weight: 700;
@@ -120,36 +104,63 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     color: var(--text-dark);
 }
-h1 { font-size: var(--font-size-3xl);}
-h2 { font-size: var(--font-size-2xl);}
-h3 { font-size: var(--font-size-xl);}
-h4 { font-size: var(--font-size-lg);}
-p { margin-bottom: var(--spacing-md);}
+
+h1 {
+    font-size: var(--font-size-3xl);
+}
+
+h2 {
+    font-size: var(--font-size-2xl);
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+}
+
+h4 {
+    font-size: var(--font-size-lg);
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+}
+
 a {
     color: var(--primary-color);
     text-decoration: none;
     transition: color var(--transition-fast);
 }
-a:hover {
-    color: var(--primary-dark);
-}
-/* Lists */
-ul, ol, .values-list {
-    margin-bottom: var(--spacing-md);
-    padding-left: var(--spacing-lg);
+
+.values-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.values-list li, li {
+
+.values-list li {
     margin-bottom: var(--spacing-sm);
     line-height: 1.5;
 }
+
 .values-list li strong {
     color: var(--primary-color);
 }
+
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+ul, ol {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 /* Container */
 .container {
     width: 100%;
@@ -157,19 +168,23 @@ img {
     margin: 0 auto;
     padding: 0 var(--container-padding);
 }
+
 /* Section Spacing */
 section {
     padding: var(--spacing-3xl) 0;
 }
+
 .section-header {
     text-align: center;
     margin-bottom: var(--spacing-3xl);
 }
+
 .section-header h2 {
     position: relative;
     display: inline-block;
     margin-bottom: var(--spacing-md);
 }
+
 .section-header h2::after {
     content: '';
     display: block;
@@ -178,24 +193,27 @@ section {
     background-color: var(--primary-color);
     margin: var(--spacing-sm) auto 0;
 }
+
 .section-header p {
     max-width: 800px;
     margin: 0 auto;
     color: var(--text-medium);
 }
+
 .section-divider {
     border-top: 1px solid var(--gray-300);
     margin: var(--spacing-3xl) 0;
 }
+
 /* --------------------------------------------
-   Header & Navigation (combined/reduced repeats)
+   Header & Navigation
 -------------------------------------------- */
 header {
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: var(--white);  /* or #fff */
+    background-color: var(--white);
     box-shadow: var(--shadow-sm);
 }
 .header-content {
@@ -206,58 +224,56 @@ header {
     padding: var(--spacing-sm) 0;
 }
 
+/* ✅ Header Logo */
+/* Ensure header & footer logos are clickable */
+.logo a,
+.footer-logo a {
+  position: relative;
+  z-index: 2000;        /* higher than nav, menus, overlays */
+  pointer-events: auto; /* allow clicks */
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
 
-.logo, .footer-logo {
+.logo img,
+.footer-logo img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+/* Make sure no overlays block clicks */
+header::before,
+header::after,
+footer::before,
+footer::after {
+  pointer-events: none;
+}
+
+
+/* ✅ Footer Logo */
+.footer-logo {
     display: flex;
     align-items: center;
-    background: none;     
     margin: 0;
     padding: 0;
-}
-.logo a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-.logo-icon, .footer-logo .logo-icon {
-    background-color: var(--primary-color);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logo-icon {
-    width: 100px;
-    height: 100px;
+    background: none;
 }
 .footer-logo .logo-icon {
     width: 30px;
     height: 30px;
-}
-.logo-icon .letter {
-    color: var(--white);
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-.logo-text, .footer-logo .logo-text {
-    color: var(--text-dark);
-    font-weight: 700;
-    font-size: 1.2rem;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer-logo .logo-text {
     color: var(--white);
+    font-weight: 700;
+    font-size: 1.2rem;
 }
-.logo img {
-    height: 100px;
-    width: auto;
-    display: block;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-    background: none;
-    border: none;
-}
-
 
 /* Navigation */
 .main-nav {
@@ -297,6 +313,7 @@ header {
     height: 3px;
     background-color: var(--primary-color);
 }
+
 /* Dropdown Menu */
 .dropdown {
     position: relative;
@@ -346,6 +363,7 @@ header {
 .dropdown:hover .dropdown-toggle i {
     transform: rotate(180deg);
 }
+
 /* Mobile Menu Toggle */
 .mobile-menu-toggle {
     display: none;
@@ -353,14 +371,16 @@ header {
     cursor: pointer;
     color: var(--text-dark);
 }
+
 /* CTA Button */
 .cta-button .btn {
     padding: var(--spacing-sm) var(--spacing-lg);
 }
+
 /* --------------------------------------------
-   Buttons (all btn styles grouped)
+   Buttons
 -------------------------------------------- */
-.btn, .btn-block {
+.btn {
     display: inline-block;
     font-weight: 500;
     text-align: center;
@@ -375,16 +395,12 @@ header {
     transition: all var(--transition-normal);
     cursor: pointer;
 }
-.btn-block {
-    display: block;
-    width: 100%;
-}
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--white);
     border-color: var(--primary-color);
 }
-.btn-primary:hover, .btn.active {
+.btn-primary:hover {
     background-color: var(--primary-dark);
     color: var(--white);
     border-color: var(--primary-dark);
@@ -409,12 +425,23 @@ header {
     color: var(--text-dark);
     border-color: var(--gray-400);
 }
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn.active {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    border-color: var(--primary-dark);
+}
+/* Button Groups */
 .hero-buttons {
     display: flex;
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
     flex-wrap: wrap;
 }
+
 /* --------------------------------------------
    Hero Section
 -------------------------------------------- */
@@ -560,7 +587,7 @@ header {
     height: 400px;
     border-radius: var(--border-radius-md);
     overflow: hidden;
-    background-image: url('../images/bg31.jpg');
+    background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
     background-size: cover;
     background-position: center;
     box-shadow: var(--shadow-lg);
