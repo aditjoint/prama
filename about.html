@@ -93,7 +93,7 @@
     </div>
 
 
-<!-- Our Team Section -->
+<!-- 🎬 Our Team Section -->
 <section class="team-section">
   <h3>Your Partner Script Writer</h3>
 
@@ -101,30 +101,63 @@
     <div class="team-card-image">
       <img src="../personphotos/markup_1000208164.jpg" alt="Sanjay Verma" />
     </div>
+
     <div class="team-card-content">
       <h4>Sanjay Verma</h4>
-      <p>
+
+      <p class="intro">
         A filmmaker and storyteller with deep industry experience, Sanjay has served as
-        Ex-Censor Board Advisory Member and former General Secretary of the Indian Documentary
-        Producers Association, bringing creative vision and social impact.
+        <strong>Ex-Censor Board Advisory Member</strong> and former
+        <strong>General Secretary of the Indian Documentary Producers Association</strong>,
+        bringing creative vision and social impact.
       </p>
+
       <p>
-Sanjay is a Business Administration graduate, Director-Writer-Translator-Poet-Documentary/Short Film Maker, SANJAY VERMA, has a rich experience of 24 years working on many MNCs and National Companies’ assignments through many renowned commercial production houses in Mumbai like RKSwamy BBDO (BBDO World’s 2 nd largest Advertisement Agency) and in MP.
-<br><br>He has been on Advisory Panel of CENSOR BOARD (Central Board of Film Certification) as an Advisory Member (2022-2024). He has been a Films Selection Committee Member in Mumbai International Film Festival 2022 (Short Films) and has been Jury Member of Short Film Festival at Mumbai.
-He is the Ex General Secretary of Indian Documentary Producers’ Association. He holds Membership of prestigious Associations like Screen Writers Association, Mumbai and Western India Film Producers’ Association,
-Mumbai.<br><br>
-His Written-Directed and co-produced documentary, “The Prime Crime”, to promote plantation, was selected for screening in an Environment film festival at Mumbai, organised by Maharashtra Pollution Control Board. He has written many documentaries on biographies of great and legendary figures like Chanakya, Sir Thomas Edison, Abraham Lincoln, etc. He wrote couple of Hindi Versions of English Feature Films like KINGKONG as well, and couple of Hindi TV Soap Episodes. He has written and translated many Ad / Corporate Films, Advertisements, Scripts for companies like Bajaj Electricals Ltd., N.P.C.I., Asian Paints, LIC of India Ltd., etc. He has also written Humor-based and story-based 450+ episodes of different Radio Programs for companies like Hutchison Essar (Vodafone, Now Vi), Hindustan Unilever Ltd., etc. 9 Small Books written by him in Hindi, published in brail for visually impaired, and many works translated by him from English to Hindi and vice versa. He has also written two ebooks in English &amp; Hindi too, published by Amazon on their website.
- </p>
+        Sanjay is a <strong>Business Administration graduate</strong>,
+        Director-Writer-Translator-Poet-Documentary/Short Film Maker with over
+        <strong>24 years of industry experience</strong>, working with leading commercial
+        production houses in Mumbai such as <strong>RK Swamy BBDO</strong> (BBDO, world’s
+        2nd largest advertising agency) and others across India.
+      </p>
+
+      <p>
+        He has been on the <strong>Advisory Panel of the Central Board of Film Certification (Censor Board)</strong>
+        (2022–2024), a <strong>Films Selection Committee Member</strong> at
+        <strong>Mumbai International Film Festival 2022</strong>, and a <strong>Jury Member</strong>
+        of Short Film Festivals in Mumbai. Sanjay has also served as
+        <strong>Ex-General Secretary of the Indian Documentary Producers’ Association</strong>
+        and holds membership in prestigious associations including
+        <em>Screen Writers Association</em> and <em>Western India Film Producers’ Association</em>.
+      </p>
+
+      <p>
+        His written-directed documentary <strong>“The Prime Crime”</strong>, promoting plantation,
+        was screened at an Environment Film Festival organized by the
+        <strong>Maharashtra Pollution Control Board</strong>. He has authored documentaries
+        on legendary figures such as <strong>Chanakya</strong>, <strong>Sir Thomas Edison</strong>,
+        and <strong>Abraham Lincoln</strong>, and written Hindi versions of English feature films
+        (e.g., <em>KING KONG</em>) and several Hindi TV serial episodes.
+      </p>
+
+      <p>
+        His creative work includes scripts for <strong>Bajaj Electricals</strong>,
+        <strong>NPCI</strong>, <strong>Asian Paints</strong>, <strong>LIC</strong>,
+        and <strong>Hindustan Unilever</strong>. He has written over
+        <strong>450+ radio episodes</strong> for brands like Hutchison Essar (now Vi).
+        Additionally, <strong>9 books authored by him have been published in Braille</strong>
+        for visually impaired readers, alongside several English↔Hindi translations.
+        He has also published two eBooks on <strong>Amazon</strong> in both English and Hindi.
+      </p>
     </div>
   </div>
 </section>
 
 <!-- 💅 Styling -->
-  <style>
+<style>
   .team-section {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(180deg, #fdfdfd 0%, #f5f5f5 100%);
+    background: linear-gradient(180deg, #fdfdfd 0%, #f7f7f7 100%);
     font-family: "Poppins", sans-serif;
   }
 
@@ -142,9 +175,9 @@ His Written-Directed and co-produced documentary, “The Prime Crime”, to prom
     justify-content: center;
     gap: 40px;
     background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
     margin: 0 auto;
     overflow: hidden;
     padding: 40px;
@@ -153,14 +186,15 @@ His Written-Directed and co-produced documentary, “The Prime Crime”, to prom
   }
 
   .team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
   }
 
   .team-card-image {
     flex: 0 0 280px;
     border-radius: 12px;
     overflow: hidden;
+    min-height: 340px;
   }
 
   .team-card-image img {
@@ -168,24 +202,24 @@ His Written-Directed and co-produced documentary, “The Prime Crime”, to prom
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
   }
 
-  .team-card:hover img {
+  .team-card:hover .team-card-image img {
     transform: scale(1.05);
   }
 
   .team-card-content {
     flex: 1;
-    max-width: 640px;
+    max-width: 650px;
   }
 
   .team-card-content h4 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #222;
     margin-bottom: 18px;
     font-weight: 600;
-    border-left: 4px solid #c79a2c;
+    border-left: 5px solid #c79a2c;
     padding-left: 12px;
   }
 
@@ -197,17 +231,17 @@ His Written-Directed and co-produced documentary, “The Prime Crime”, to prom
     text-align: justify;
   }
 
-  .team-card-content br {
-    line-height: 2;
+  .team-card-content p strong {
+    color: #111;
+    font-weight: 600;
   }
 
-  /* Subtle divider for readability */
   .team-card-content p + p {
     border-top: 1px solid #eee;
-    padding-top: 10px;
+    padding-top: 14px;
   }
 
-  /* Responsive Design */
+  /* ✨ Responsive Design */
   @media (max-width: 1024px) {
     .team-card {
       gap: 25px;
@@ -218,15 +252,16 @@ His Written-Directed and co-produced documentary, “The Prime Crime”, to prom
   @media (max-width: 900px) {
     .team-card {
       flex-direction: column;
+      align-items: center;
       text-align: center;
       padding: 25px;
     }
 
     .team-card-image {
-      flex: 0 0 auto;
       width: 100%;
       max-width: 380px;
-      margin: 0 auto 20px;
+      margin-bottom: 25px;
+      min-height: auto;
     }
 
     .team-card-content {
