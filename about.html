@@ -97,28 +97,116 @@
 <section class="team-section">
   <h3>Your Partner Script Writer</h3>
 
-  <div class="team-card-holder">
-    <div class="team-card">
+  <div class="team-card">
+    <div class="team-card-image">
       <img src="../personphotos/markup_1000208164.jpg" alt="Sanjay Verma" />
-      <div class="team-card-content">
-        <h4>Sanjay Verma</h4>
-        <p>
-          A filmmaker and storyteller with deep industry experience, Sanjay has served as
-          Ex-Censor Board Advisory Member and former General Secretary of the Indian Documentary
-          Producers Association, bringing creative vision and social impact.
-        </p>
-        <p>
-          Sanjay is a Business Administration graduate, Director-Writer-Translator-Poet-Documentary/Short Film
-          Maker, Sanjay Verma has a rich experience of 24 years working with MNCs and national
-          companies through production houses like RK Swamy BBDO. He has been on the Advisory Panel
-          of the Central Board of Film Certification (2022–2024) and was part of several film selection
-          and jury committees. His documentary “The Prime Crime” was screened in an Environment Film
-          Festival in Mumbai, and his writing spans documentaries, ad films, radio programs, and ebooks.
-        </p>
-      </div>
+    </div>
+    <div class="team-card-content">
+      <h4>Sanjay Verma</h4>
+      <p>
+        A filmmaker and storyteller with deep industry experience, Sanjay has served as
+        Ex-Censor Board Advisory Member and former General Secretary of the Indian Documentary
+        Producers Association, bringing creative vision and social impact.
+      </p>
+      <p>
+        A Business Administration graduate, Director-Writer-Translator-Poet-Documentary/Short Film
+        Maker, Sanjay Verma has a rich experience of 24 years working with MNCs and national
+        companies through production houses like RK Swamy BBDO. He has been on the Advisory Panel
+        of the Central Board of Film Certification (2022–2024) and was part of several film selection
+        and jury committees. His documentary “The Prime Crime” was screened in an Environment Film
+        Festival in Mumbai, and his writing spans documentaries, ad films, radio programs, and ebooks.
+      </p>
     </div>
   </div>
 </section>
+
+<!-- 💅 Styling -->
+<style>
+  .team-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fafafa;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .team-section h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 40px;
+  }
+
+  .team-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .team-card-image {
+    flex: 0 0 300px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .team-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .team-card-content {
+    flex: 1;
+  }
+
+  .team-card-content h4 {
+    font-size: 1.5rem;
+    color: #111;
+    margin-bottom: 15px;
+  }
+
+  .team-card-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .team-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .team-card-image {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+
+    .team-card-content {
+      text-align: justify;
+    }
+  }
+</style>
 
 
 
