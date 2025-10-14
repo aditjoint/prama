@@ -120,43 +120,45 @@ His Written-Directed and co-produced documentary, “The Prime Crime”, to prom
 </section>
 
 <!-- 💅 Styling -->
-<style>
+  <style>
   .team-section {
     text-align: center;
-    padding: 60px 20px;
-    background: #fafafa;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #fdfdfd 0%, #f5f5f5 100%);
     font-family: "Poppins", sans-serif;
   }
 
   .team-section h3 {
-    font-size: 1.8rem;
-    color: #222;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
 
   .team-card {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    max-width: 1100px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 30px;
+    padding: 40px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .team-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
   }
 
   .team-card-image {
-    flex: 0 0 300px;
+    flex: 0 0 280px;
     border-radius: 12px;
     overflow: hidden;
   }
@@ -166,43 +168,76 @@ His Written-Directed and co-produced documentary, “The Prime Crime”, to prom
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+    transition: transform 0.5s ease;
+  }
+
+  .team-card:hover img {
+    transform: scale(1.05);
   }
 
   .team-card-content {
     flex: 1;
+    max-width: 640px;
   }
 
   .team-card-content h4 {
-    font-size: 1.5rem;
-    color: #111;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    color: #222;
+    margin-bottom: 18px;
+    font-weight: 600;
+    border-left: 4px solid #c79a2c;
+    padding-left: 12px;
   }
 
   .team-card-content p {
     font-size: 1rem;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #444;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     text-align: justify;
   }
 
+  .team-card-content br {
+    line-height: 2;
+  }
+
+  /* Subtle divider for readability */
+  .team-card-content p + p {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+
   /* Responsive Design */
+  @media (max-width: 1024px) {
+    .team-card {
+      gap: 25px;
+      padding: 30px;
+    }
+  }
+
   @media (max-width: 900px) {
     .team-card {
       flex-direction: column;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
     }
 
     .team-card-image {
       flex: 0 0 auto;
       width: 100%;
-      max-width: 400px;
+      max-width: 380px;
       margin: 0 auto 20px;
     }
 
     .team-card-content {
+      max-width: 100%;
       text-align: justify;
+    }
+
+    .team-card-content h4 {
+      text-align: center;
+      border: none;
+      padding: 0;
     }
   }
 </style>
